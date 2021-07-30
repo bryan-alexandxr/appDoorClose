@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05C6DF"
+    tools:context=".ActivityLogeado">
+
+    <Button
+        android:id="@+id/botonNotifications"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Notifications"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonSyncUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonReset"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Reset"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/separadadorWhite"
+        android:layout_width="200dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="88dp"
+        android:rotation="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separadorblanco" />
+
+    <Button
+        android:id="@+id/botonAlarms"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Alarms"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonNotifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonSyncUp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Sync Up"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonSecurity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonSecurity"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Security"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonSettings"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="Settings"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toTopOf="@+id/botonAlarms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonHistory"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-black"
+        android:text="History"
+        android:textColor="#05C6DF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/candado" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usuarioicono" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="19dp"
+        android:text="user"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonReportar"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="108dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="633dp"
+        android:radius="20dp"
+        android:text="Report problem"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/logoOnOff"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="@+id/separadadorWhite"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/separadadorWhite"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onofflogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

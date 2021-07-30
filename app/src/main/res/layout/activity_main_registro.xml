@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05C6DF"
+    tools:context=".MainActivityRegistro">
+
+    <EditText
+        android:id="@+id/apellidoReg"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Last name"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/botonRegistrarse"
+        android:layout_width="170dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="448dp"
+        android:background="@drawable/tipoboton3"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="intentoDeRegistro"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textRegister" />
+
+    <EditText
+        android:id="@+id/nombreReg"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="234dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contrasenaReg"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="50"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailReg"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="345dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="82dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="542dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegister"
+        app:srcCompat="@drawable/usuarioicono" />
+
+    <ImageView
+        android:id="@+id/separadorIcono"
+        android:layout_width="250dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="45dp"
+        android:rotation="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/icono"
+        app:srcCompat="@drawable/separadorblanco" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/icono"
+        app:layout_constraintEnd_toEndOf="@+id/botonRegresar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/botonRegresar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="99dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="113dp"
+        android:background="@drawable/tipoboton1"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="regresar"
+        android:text="Go Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/botonRegistrarse" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:background="@drawable/progressbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegistrarse"
+        app:layout_constraintEnd_toEndOf="@+id/botonRegistrarse"
+        app:layout_constraintStart_toStartOf="@+id/botonRegistrarse"
+        app:layout_constraintTop_toTopOf="@+id/textRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

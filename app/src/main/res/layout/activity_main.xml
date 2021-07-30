@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05C6DF"
+    tools:context=".MainActivity">
+    android:theme=
+
+    <Button
+        android:id="@+id/botonCrearCuenta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/tipoboton1"
+        android:onClick="registro"
+        android:text="New user? Create an account"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBienvenida" />
+
+    <TextView
+        android:id="@+id/textDoorClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="325dp"
+        android:fontFamily="sans-serif-black"
+        android:text="DOOR CLOSE"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailSignIn"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBienvenida" />
+
+    <TextView
+        android:id="@+id/textBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="575dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome to,"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonCrearCuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="240dp"
+        android:layout_height="362dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/puertainicio" />
+
+    <EditText
+        android:id="@+id/emailSignIn"
+        android:layout_width="216dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/contrasenaSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDoorClose" />
+
+    <EditText
+        android:id="@+id/contrasenaSignIn"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundstyletext"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:shadowColor="#FFFFFF"
+        android:shadowRadius="50"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/butonSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="76dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="238dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonCrearCuenta"
+        app:layout_constraintEnd_toEndOf="@+id/emailSignIn"
+        app:layout_constraintStart_toStartOf="@+id/emailSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/textRegister"
+        app:srcCompat="@drawable/usuarioicono" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textDoorClose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/candado" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="200dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="77dp"
+        android:rotation="12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separadorblanco" />
+
+    <TextView
+        android:id="@+id/textRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="146dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sign in"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butonSignIn"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:background="@drawable/tipoboton2"
+        android:onClick="intentoLogIn"
+        android:text="Sign In"
+        app:layout_constraintBottom_toTopOf="@+id/botonCrearCuenta"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaSignIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
